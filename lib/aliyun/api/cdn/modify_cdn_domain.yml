@@ -1,12 +1,12 @@
 ---
-Action: ModifyCdnDomain
+action: ModifyCdnDomain
 
-Parameters:
-  -
+parameters:
+  domain_name:
     parameter: DomainName
     type: string
     required: YES
-  -
+  source_type:
     parameter: SourceType
     type: string
     enum: YES
@@ -15,7 +15,7 @@ Parameters:
       - domain
       - OSS
     required: NO
-  -
+  source_port:
     parameter: SourcePort
     type: integer
     enum: YES
@@ -23,7 +23,7 @@ Parameters:
       - 443
       - 80
     required: NO
-  -
+  sources:
     parameter: Sources
     type: string
     required: NO

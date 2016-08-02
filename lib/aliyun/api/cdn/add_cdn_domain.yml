@@ -1,12 +1,12 @@
 ---
-Action: AddCdnDomain
+action: AddCdnDomain
 
-Parameters:
-  -
+parameters:
+  domain_name:
     parameter: DomainName
     type: string
     required: YES
-  -
+  cdn_type:
     parameter: CdnType
     type: string
     enum: YES
@@ -16,7 +16,7 @@ Parameters:
       - video
       - liveStream
     required: YES
-  -
+  source_type:
     parameter: SourceType
     type: string
     enum: YES
@@ -25,7 +25,7 @@ Parameters:
       - domain
       - OSS
     required: NO
-  -
+  source_port:
     parameter: SourcePort
     type: integer
     enum: YES
@@ -33,15 +33,15 @@ Parameters:
       - 443
       - 80
     required: NO
-  -
+  sources:
     parameter: Sources
     type: string
     required: NO
-  -
+  server_certificate:
     parameter: ServerCertificate
     type: string
     required: NO
-  -
+  private_key:
     parameter: PrivateKey
     type: string
     required: NO

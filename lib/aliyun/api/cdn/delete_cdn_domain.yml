@@ -1,8 +1,8 @@
 ---
-Action: DeleteCdnDomain
+action: DeleteCdnDomain
 
-Parameters:
-  -
+parameters:
+  domain_name:
     parameter: DomainName
     type: string
     required: YES
