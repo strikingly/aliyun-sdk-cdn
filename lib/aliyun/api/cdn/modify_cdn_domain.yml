@@ -1,0 +1,29 @@
+---
+Action: ModifyCdnDomain
+
+Parameters:
+  -
+    parameter: DomainName
+    type: string
+    required: YES
+  -
+    parameter: SourceType
+    type: string
+    enum: YES
+    enum_values:
+      - ipaddr
+      - domain
+      - OSS
+    required: NO
+  -
+    parameter: SourcePort
+    type: integer
+    enum: YES
+    enum_values:
+      - 443
+      - 80
+    required: NO
+  -
+    parameter: Sources
+    type: string
+    required: NO

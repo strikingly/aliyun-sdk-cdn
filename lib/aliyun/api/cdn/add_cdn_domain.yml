@@ -1,0 +1,47 @@
+---
+Action: AddCdnDomain
+
+Parameters:
+  -
+    parameter: DomainName
+    type: string
+    required: YES
+  -
+    parameter: CdnType
+    type: string
+    enum: YES
+    enum_values:
+      - web
+      - download
+      - video
+      - liveStream
+    required: YES
+  -
+    parameter: SourceType
+    type: string
+    enum: YES
+    enum_values:
+      - ipaddr
+      - domain
+      - OSS
+    required: NO
+  -
+    parameter: SourcePort
+    type: integer
+    enum: YES
+    enum_values:
+      - 443
+      - 80
+    required: NO
+  -
+    parameter: Sources
+    type: string
+    required: NO
+  -
+    parameter: ServerCertificate
+    type: string
+    required: NO
+  -
+    parameter: PrivateKey
+    type: string
+    required: NO

@@ -1,0 +1,8 @@
+---
+Action: StopCdnDomain
+
+Parameters:
+  -
+    parameter: DomainName
+    type: string
+    required: YES

@@ -1,0 +1,8 @@
+---
+Action: StartCdnDomain
+
+Parameters:
+  -
+    parameter: DomainName
+    type: string
+    required: YES

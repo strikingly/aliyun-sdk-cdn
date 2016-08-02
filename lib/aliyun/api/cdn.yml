@@ -1,0 +1,7 @@
+---
+name: cdn
+host: cdn.aliyuncs.com
+schema: https
+format: JSON
+version: '2014-11-11'
+signature_method: HMAC-SHA1
